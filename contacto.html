@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icono">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+    
+            <ul class="nav-links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./biografia.html">Biografía</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <body>
+            <h2 class="titulos-h2">Ponte en contacto conmigo</h2>
+            <div class="contenedor-formulario">
+                <div class="elemento-formulario">
+                    <form name="formulario-contacto">
+                        <label>Introduce tu nombre: <input type="text" placeholder="nombre y apellidos"></label>
+
+                        <label class="label-flex">¿Cómo quieres que me dirija a ti?</label>
+                        <select name="sexo-usuario">
+                            <option value="">--Escoge una opción--</option>
+                            <option>Sr.</option>
+                            <option>Sra.</option>
+                            <option>Prefiero no decirlo</option>
+                        </select>
+
+                        <label>Introduce tu móvil: 
+                            <input type="tel" placeholder="+34"></label>
+
+                        <label>Introduce tu correo: 
+                            <input type="email" placeholder="ejemplo@gmail.com"></label>
+
+                        <label class="contenedor-checkbox">
+                            ¿Quieres contratarme? 
+                            <input type="radio" name="contratacion" value="Sí">
+                            <span>Sí</span>
+                            <input type="radio" name="contratacion" value="No">
+                            <span>No</span>
+                        </label>
+
+                        <label>¿Cuánto estás dispuesto a pagarme?</label>
+                        <div>
+                            <span>30.000€</span>
+                            <input
+                            type="range"
+                            name="sueldo"
+                            min="30000"
+                            max="500000"
+                            step="100"
+                            value="265000">
+                            <span>500.000€</span>
+                        </div>
+
+                        <label>Deseas recibir un whatsApp todos los días deseándome los buenos días
+                            <input type="radio" name="recibir-whatsapp" value="Sí">
+                            <span>Sí</span>
+                            <input type="radio" name="recibir-whatsapp" value="No">
+                            <span>No</span>
+                        </label>
+
+                        <label>¿Quieres comentarme algo en especial?</label><textarea placeholder="Escríbelo aquí"></textarea>
+
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Reiniciar formulario">
+                    </form>
+                </div>
+            </div>
+        </body>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="elementos-footer">
+                <a href="https://cdn.eldeforma.com/wp-content/uploads/2020/03/image.png" target="_blank">&#x2757;Aviso legal</a>
+                <a href="https://www.ensalza.com/blog/wp-content/uploads/pol%C3%ADtica-de-cookies-1.jpg" target="_blank">&#x1F36A;Cookies</a>
+                <a href="https://images7.memedroid.com/images/UPLOADED925/5f9877ff5c0a4.jpeg" target="_blank">&#x1F5D2;Blog</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
