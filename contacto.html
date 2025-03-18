@@ -29,22 +29,22 @@
             <h2 class="titulos-h2">Ponte en contacto conmigo</h2>
             <div class="contenedor-formulario">
                 <div class="elemento-formulario">
-                    <form name="formulario-contacto">
-                        <label>Introduce tu nombre: <input type="text" placeholder="nombre y apellidos"></label>
+                    <form name="formulario">
+                        <label>Introduce tu nombre: <input type="text" id="nombre" name="nombre" placeholder="nombre y apellidos"></label>
 
                         <label class="label-flex">¿Cómo quieres que me dirija a ti?</label>
-                        <select name="sexo-usuario">
+                        <select name="sexo">
                             <option value="">--Escoge una opción--</option>
                             <option>Sr.</option>
                             <option>Sra.</option>
                             <option>Prefiero no decirlo</option>
                         </select>
 
-                        <label>Introduce tu móvil: 
-                            <input type="tel" placeholder="+34"></label>
+                        <label for="movil">Introduce tu móvil: 
+                            <input type="tel" id="movil" name="movil" placeholder="+34"></label>
 
-                        <label>Introduce tu correo: 
-                            <input type="email" placeholder="ejemplo@gmail.com"></label>
+                        <label for="correo">Introduce tu correo: 
+                            <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com"></label>
 
                         <label class="contenedor-checkbox">
                             ¿Quieres contratarme? 
@@ -68,20 +68,22 @@
                         </div>
 
                         <label>Deseas recibir un whatsApp todos los días deseándome los buenos días
-                            <input type="radio" name="recibir-whatsapp" value="Sí">
+                            <input type="radio" name="whatsapp" value="Sí">
                             <span>Sí</span>
-                            <input type="radio" name="recibir-whatsapp" value="No">
+                            <input type="radio" name="whatsapp" value="No">
                             <span>No</span>
                         </label>
 
-                        <label>¿Quieres comentarme algo en especial?</label><textarea placeholder="Escríbelo aquí"></textarea>
+                        <label>¿Quieres comentarme algo en especial?</label><textarea name="comentario" placeholder="Escríbelo aquí"></textarea>
 
                         <input type="submit" value="Enviar">
                         <input type="reset" value="Reiniciar formulario">
+                        <div id="mensaje-error"></div>
                     </form>
                 </div>
             </div>
         </body>
+        <script src="scripts.js"></script>
     </main>
     <footer>
         <div class="contenedor-footer">
